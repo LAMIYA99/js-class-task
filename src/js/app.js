@@ -220,7 +220,7 @@
 
 // let str = "lamiye"
 // for (let i = 0; i< str.length; i++) {
-   
+
 //     if(i%2==0) {
 //         console.log(str[i].toUpperCase())
 //     }
@@ -228,50 +228,82 @@
 
 
 
-class animals {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    
-    }
+// class animals {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
 
-    typesir(){
-    if(this.name==="lion"){
-        console.log("sir hemise sir deyil")
-    }
-    else(
-        console.log(this.name)
-    )
-    }
-}
-let animal= new animals("lion");
+//     }
 
-animal.typesir();
+//     typesir(){
+//     if(this.name==="lion"){
+//         console.log("sir hemise sir deyil")
+//     }
+//     else(
+//         console.log(this.name)
+//     )
+//     }
+// }
+// let animal= new animals("lion");
 
-
+// animal.typesir();
 
 
-class CategoryOfAnimal{
-    constructor(category){
-        this.category=category
-
-    }
-    showAnimalCategory(){
-        if(this.category==="surunenler"){
-            console.log("Braziliya")
-        }else if(this.category==="akulalar"){
-            console.log("Okean")
-        }else if(this.category==="ucanlar"){
-            console.log("Afrika")
-
-        }
-    }
-}
 
 
-let categoryAnimal=new CategoryOfAnimal("akulalar")
-console.log(categoryAnimal.showAnimalCategory())
+// class CategoryOfAnimal{
+//     constructor(category){
+//         this.category=category
 
+//     }
+//     showAnimalCategory(){
+//         if(this.category==="surunenler"){
+//             console.log("Braziliya")
+//         }else if(this.category==="akulalar"){
+//             console.log("Okean")
+//         }else if(this.category==="ucanlar"){
+//             console.log("Afrika")
+
+//         }
+//     }
+// }
+
+// let categoryAnimal=new CategoryOfAnimal("akulalar")
+// console.log(categoryAnimal.showAnimalCategory())
+
+
+// const Hero = document.querySelector(".banner");
+
+// function getHero(){
+//     console.log("Hero clicked");
+// }
+
+// getHero( )
+
+// Hero.addEventListener("click", function(){
+//     console.log("Hero clicked");
+// });
+
+// function getzero() {
+
+// }
+
+// Item.addEventListener("click", getzero);
+
+
+
+
+
+const buttons = document.querySelectorAll(".cards button")
+const cardBody =document.querySelector(".cards_body")
+const colors = ["red", "black", "orange", "pink","blue","rgb(89, 98, 13)"]
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        console.log("hello Lamiye");
+        const randomcolor = colors[Math.floor(Math.random() * colors.length)]
+        cardBody.parentElement.style.backgroundColor = randomcolor
+    })
+});
 
 
 
